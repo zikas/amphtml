@@ -334,7 +334,7 @@ There are several types of runtime errors that may be encountered when working w
 
 | Type | Example | Message | Suggestion |
 | --- | --- | --- | --- |
-| Invalid binding | `<p [someBogusAttribute]="myExpression">` | *Binding to [someBogusAttribute] on `<P>`` is not allowed.* | Make sure that only [whitelisted bindings](#element-specific-attributes) are used. |
+| Invalid binding | `<p [someBogusAttribute]="myExpression">` | *Binding to [someBogusAttribute] on `<P>` is not allowed.* | Make sure that only [whitelisted bindings](#element-specific-attributes) are used. |
 | Syntax error | `<p [text]="(missingClosingParens">` | *Expression compilation error in...* | Double-check the expression for typos. |
 | Non-whitelisted functions | `<p [text]="alert(1)"></p>` | *alert is not a supported function.* | Only use [whitelisted functions](#whitelisted-functions). |
 | Sanitized result | `<a href="javascript:alert(1)"></a>` | *"javascript:alert(1)" is not a valid result for [href].* | Avoid banned URL protocols or expressions that would fail the AMP Validator. |
